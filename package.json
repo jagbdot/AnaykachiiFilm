@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/index.html --no-minify --no-source-maps --public-url ./",
@@ -16,7 +18,7 @@
   "keywords": [],
   "author": "Codrops",
   "license": "MIT",
-  "homepage": "https://tympanus.net/Development/BackgroundScaleHoverEffect/",
+  "homepage": "http://jagbdot.github.io/AaykachiiFilm", 
   "bugs": {
     "url": "https://github.com/codrops/BackgroundScaleHoverEffect/issues"
   },
