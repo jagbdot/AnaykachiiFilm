@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "start": "parcel src/index.html --open",
+    "start": "parcel build src/index.html --public-url='/AnaykachiiFilm", 
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/index.html --no-minify --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
